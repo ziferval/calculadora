@@ -18,7 +18,7 @@ int main()
     scanf("%d", &valor2);
 
     switch (op){
-        case 1:
+        case 1:    // Elaborado pelo Miguel, 25-09-2025 
             resultado=valor1+valor2;
             printf("Resultado: %d.", resultado);
             break;
