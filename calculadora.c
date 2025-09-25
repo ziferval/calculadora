@@ -6,19 +6,21 @@ int main()
 {
     setlocale(LC_ALL,"");
     int op, valor1, valor2, resultado;
-    printf("O que pretende fazer?\n ");
-    printf("1 - Soma\n ");
-    printf("2 - Subtração\n ");
-    printf("3 - Multiplicação\n ");
-    printf("4 - Divisão\n ");
-    scanf("%d", &op);
-    printf("Insira o primeiro valor: ");
-    scanf("%d", &valor1);
-    printf("Insira o segundo valor: ");
-    scanf("%d", &valor2);
+	void menu() {
+		printf("O que pretende fazer?\n ");
+		printf("1 - Soma\n ");
+		printf("2 - Subtração\n ");
+		printf("3 - Multiplicação\n ");
+		printf("4 - Divisão\n ");
+		scanf("%d", &op);
+		printf("Insira o primeiro valor: ");
+		scanf("%d", &valor1);
+		printf("Insira o segundo valor: ");
+		scanf("%d", &valor2);
+	}
 
     switch (op){
-        case 1:    // Elaborado pelo Miguel, 25-09-2025 
+        case 1:
             resultado=valor1+valor2;
             printf("Resultado: %d.", resultado);
             break;
@@ -35,4 +37,5 @@ int main()
             printf("Resultado: %d.", resultado);
             break;
     }
+	menu();
 }
