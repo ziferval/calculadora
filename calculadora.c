@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#define PI 3.1416 // muito importante
+
 
 int main()
 {
@@ -24,10 +26,16 @@ int main()
             resultado=valor1+valor2;
             printf("Resultado: %d.", resultado);
             break;
+
+        //Feito Por Fábio
+
         case 2:
             resultado=valor1-valor2;
             printf("Resultado: %d.", resultado);
             break;
+
+
+
         case 3:
             resultado=valor1*valor2;
             printf("Resultado: %d.", resultado);
