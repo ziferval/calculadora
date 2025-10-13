@@ -4,7 +4,7 @@
 #define PI 3.1416 // muito importante
 // Definição de constantes
 
-
+// Menu inicial para calculadora que pede ao user escolher a operação matemática que quer fazer. Elaborado por Paulina, 25-09-2025 
 int main()
 {
     setlocale(LC_ALL,"");
@@ -15,7 +15,6 @@ int main()
 		printf("2 - Subtração\n ");
 		printf("3 - Multiplicação\n ");
 		printf("4 - Divisão\n ");
-		printf("5 - Divisão mas melhor\n ");
 		scanf("%d", &op);
 		printf("Insira o primeiro valor: ");
 		scanf("%d", &valor1);
@@ -24,36 +23,33 @@ int main()
 	}
 
     switch (op){
-        case 1:    // Elaborado pelo Miguel, 25-09-2025 
+        case 1:    // Operação de somar. Pede dois valores e soma-os. Elaborado pelo Miguel, 25-09-2025 
             resultado=valor1+valor2;
             printf("Resultado: %d.", resultado);
             break;
 
-        //Feito Por Fábio
+        // Subtração, pede dois valores e subtrai-os. Elaborado por Fábio, 25-09-2025
 
         case 2:
             resultado=valor1-valor2;
             printf("Resultado: %d.", resultado);
             break;
 
-
-
+       // Ajuste de identação para garantir a funcionalidade do código. Elaborado por Cristiane, 13-10-2025
+		
+        // Multiplicação. Pede dois valores e multiplica-os. Elaborado por Afonso, 25-09-2025
         case 3:
             resultado=valor1*valor2;
             printf("Resultado: %d.", resultado);
             break;
 
-            //ajuste de identação por Cristiane, 13-10-2025
-
+        // Divisão. Pede dois valores e divide-os. Elaborado por Marco,  13-10-2025
 
         case 4:
             resultado=valor1/valor2;
             printf("Resultado: %d.", resultado);
             break;
-		case 5:
-		    resultado=valor1/valor2;
-            printf("Resultado (melhor): %d.", resultado);
-            break;
     }
 	menu();
 }
+
