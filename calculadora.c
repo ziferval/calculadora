@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #define PI 3.1416 // muito importante
+// Definição de constantes
 
 
 int main()
