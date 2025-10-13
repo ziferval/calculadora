@@ -12,10 +12,11 @@ char area(){
     printf("[2]Rectangle: Area = w * h \n");
     printf("[3]Square: Area = a2 \n");
     printf("[4]Circle: Area = PI * r2 \n\n");
+    printf("[5]Triangle Isosceles: Area = (b * a)/2");
     printf("----------------------------\n");
     scanf(" %c", &op);
     system("cls");
-    } while(op != '1' && op != '2' && op != '3' && op != '4');
+    } while(op != '1' && op != '2' && op != '3' && op != '4' && op !='5');
 return op;
 }
 
@@ -44,6 +45,14 @@ void calculoArea(op){
         printf("Area of Circle = %.4f * %.2lf \n", PI, base);
         printf("Area of Circle = %.2lf \n", PI * base);
         break;
+
+    case '5': //area do triangulo isosceles
+        printf("Base? "); scanf("%lf", &base);
+        printf("Height? "); scanf("%lf", &height);
+        printf("Area of Triangle Isosceles = (%.2lf * %.2lf)/2  *  \n", base, height);
+        printf("Area of Triangle = %.2lf \n", (base * height)/2);
+        break;
+                
     default:
         printf("Error!!! \n \n \n");
         return 1;
