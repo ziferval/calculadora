@@ -14,6 +14,7 @@ int main()
 		printf("2 - Subtração\n ");
 		printf("3 - Multiplicação\n ");
 		printf("4 - Divisão\n ");
+		printf("5 - Divisão mas melhor\n ");
 		scanf("%d", &op);
 		printf("Insira o primeiro valor: ");
 		scanf("%d", &valor1);
@@ -43,6 +44,10 @@ int main()
         case 4:
             resultado=valor1/valor2;
             printf("Resultado: %d.", resultado);
+            break;
+		case 5:
+		    resultado=valor1/valor2;
+            printf("Resultado (melhor): %d.", resultado);
             break;
     }
 	menu();
