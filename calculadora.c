@@ -41,6 +41,10 @@ int main()
             resultado=valor1*valor2;
             printf("Resultado: %d.", resultado);
             break;
+
+            //ajuste de identação por Cristiane, 13-10-2025
+
+
         case 4:
             resultado=valor1/valor2;
             printf("Resultado: %d.", resultado);
